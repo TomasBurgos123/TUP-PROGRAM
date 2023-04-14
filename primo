@@ -23,7 +23,10 @@ public class primo {
                 }
             }
             System.out.println("Hay "+i+" numeros no primos entre 0 y "+a);
-            System.out.println("Hay "+j+" numeros primos entre 0 y "+a);
+            if (a>=3) {
+                System.out.println("Hay " + j + " numeros primos entre 0 y " + a);
+            }
+
         }
     }
 }
