@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class primo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        int a = sc.nextInt();
+        int cont=4;
+        int i=0;
+        int j=3;
+
+        if (a==0 || a%2==0 || a%3==0){
+            System.out.println("El numero "+a+" no es primo.");
+        }else{
+            System.out.println("El numero "+a+" es primo.");
+            while(cont<a){
+                if (cont%2==0 || cont%3==0){
+                    cont++;
+                    i++;
+                }else{
+                    cont++;
+                    j++;
+                }
+            }
+            System.out.println("Hay "+i+" numeros no primos entre 0 y "+a);
+            System.out.println("Hay "+j+" numeros primos entre 0 y "+a);
+        }
+    }
+}
